@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<% for(let item of Object.values(data)) { %>
+		<div class="contentWrapper">
+		<a href='https://en.wikipedia.org/?curid=<%= item.pageid %>'><%= item.title%></a>
+		<h3><%= item.extract%></h3>
+		</div>
+		<% } %>
+</body>
+</html>
